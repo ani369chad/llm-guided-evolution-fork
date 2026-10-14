@@ -32,11 +32,9 @@ python-bash-script
 ------
 #!/bin/bash
 #SBATCH --job-name=evaluateGene
-#SBATCH -t 4:00:00
-#SBATCH --gres=gpu:1
-#SBATCH -G 1
-#SBATCH --mem 16G
-#SBATCH -c 12
+#SBATCH -t 0:30:00
+#SBATCH --mem 8G
+#SBATCH -c 4
 #SBATCH -N 1
 #SBATCH --output=run_job_outputs/evaluation/slurm-%j.out
 ------
