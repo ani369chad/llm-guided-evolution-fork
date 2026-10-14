@@ -35,7 +35,7 @@ PROMPTS = f"templates/{DEFAULT_PROMPT_GROUP}/**/*.txt"
 
 # TODO: Adding this here, I think it's supposed to parse from the command line
 OUTPUT_DIR = "titanic_test"
-PORT = int(os.getenv("LLMGE_PORT", "8137"))
+PORT = int(os.getenv("LLMGE_PORT", "8066"))
 
 LLM_MODEL = 'llama3.3'
 PACE_ICE = True

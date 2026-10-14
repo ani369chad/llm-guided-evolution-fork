@@ -77,8 +77,10 @@ if __name__ == '__main__':
     X = train_df.drop("Survived", axis=1)
     y = train_df["Survived"]
 
+    # Team split from our ML/MOGP notebook: 80/20 with random_state=2600
+    # (same 179-passenger holdout: 106 died, 73 survived)
     X_train, X_val, y_train, y_val = train_test_split(
-    X, y, test_size=0.2, random_state=0)
+    X, y, test_size=0.2, random_state=2600)
 
     model = model_module.Model()
     model.fit(X_train, y_train)
